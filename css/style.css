@@ -8646,6 +8646,50 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
 
+      /* Reduce height to 70% on smaller screens for better scrolling */
+@media (max-width: 991.98px) {
+  .owl-carousel.home-slider {
+    height: 70vh; /* 70% of viewport height */
+  }
+}
+
+.owl-carousel.home-slider .slider-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 750px;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 991.98px) {
+  .owl-carousel.home-slider .slider-item {
+    height: 70vh; /* Adjust height on mobile screens */
+  }
+}
+
+.owl-carousel.home-slider .slider-item .slider-text {
+  height: 750px;
+  z-index: 0;
+}
+
+@media (max-width: 991.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text {
+    height: 70vh; /* Ensure text container also adjusts */
+  }
+}
+
+.owl-carousel.home-slider .slider-item .slider-text .one-third {
+  height: 750px;
+}
+
+@media (max-width: 991.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+    height: 70vh;
+  }
+}
+
+
 .hero-wrap {
   width: 100%;
   height: 100%;
